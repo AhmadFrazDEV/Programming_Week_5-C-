@@ -1,0 +1,62 @@
+
+
+
+#include<iostream>
+using namespace std;
+main()
+{
+/*-----The program that tells the student that he is late, Earlier, or on time-----*/ 
+ int exam_time_h;;
+ cout<<"The starting time of Exam is(hour)...";
+ cin>>exam_time_h;
+ int exam_time_m;
+ cout<<"The starting time of Exam is(minute)...";
+ cin>>exam_time_m;
+ int st_time_h;
+ int st_time_m;
+ cout<<"Student arrival time (hours).....";
+ cin>>st_time_h;
+ cout<<"Student arrival time (minutes).....";
+ cin>>st_time_m;
+ if(((exam_time_h>=0 || exam_time_h<=23) && (exam_time_m>=0 || exam_time_m<=23)) &&((st_time_h>=0 || st_time_h<=23) &&(st_time_m>=0 || st_time_m<=59) ))
+ {
+     if((exam_time_h==st_time_h) && (exam_time_m==st_time_m)) //for exect time
+	 {
+	 	cout<<"You are arrive at exect time...";
+	 }	
+	 else if((exam_time_h>st_time_h) || (exam_time_m>st_time_m))//for earlier
+	 {
+	 	
+	 
+	 	int diff_h=exam_time_h-st_time_h;
+	 	int diff_m=exam_time_m-st_time_m;
+	 	cout<<"Early"<<endl;
+	 	cout<<diff_h<<":"<<diff_m<<"before exam start....."<<endl;
+	 }
+		
+	   else if((exam_time_h>st_time_h) && (exam_time_m<st_time_m)) //for earlier
+		
+		
+			{
+				int diff_h=exam_time_h-st_time_h;
+	 	        int diff_m=st_time_m-exam_time_m;
+	 			cout<<"Early"<<endl;
+	 			cout<<diff_m << ":" <<diff_h<<"before exam start....."<<endl;
+			}
+		 // else within else bracket
+		 
+		 else
+		 {
+		 	if(((exam_time_h==st_time_h) || (exam_time_m>st_time_m)) && ((exam_time_h<st_time_h) || (exam_time_m<st_time_m)))
+		 	{
+		 		int diff_h=exam_time_h-st_time_h;
+	 	        int diff_m=st_time_m-exam_time_m;
+	 			cout<<"Late"<<endl;
+	 			cout<<diff_h << ":" <<diff_m<<"after exam start....."<<endl;
+			}
+		 }
+		 
+	 } //first if bracket
+
+
+}  // main bracket
