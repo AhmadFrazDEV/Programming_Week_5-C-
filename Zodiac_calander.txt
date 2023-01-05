@@ -1,0 +1,381 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	for(int i=0 ; i<=10 ; i++)
+{
+ 	string month;
+	int date;
+	cout<<"Enter your Date of Birth(mm/dd)....";
+	cin>>month >>date;
+//	cout<<"============================================================="<<endl;
+
+//first zodiac
+	if(month=="march")
+	{
+		if(date>=21 && date<31)
+		{
+			cout<<"Arise"<<endl;
+			cout<<"The Ram"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="april")
+		{
+				if(date>=1 && date<20)
+		{
+			cout<<"Arise"<<endl;
+			cout<<"The Ram"<<endl;
+		}
+		else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}   
+//	cout<<"======================================================"<<endl;
+	
+
+//second zodiac		
+	if(month=="april")
+	{
+		if(date>=20 && date<=30)
+		{
+			cout<<"Taurus"<<endl;
+			cout<<"The Bull"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="may")
+		{
+				if(date>=1 && date<20)
+		{
+			cout<<"Taurus"<<endl;
+			cout<<"The Bull"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+	
+//		cout<<"======================================================"<<endl;
+	
+	
+//third zodiac	
+	if(month=="may")
+	{
+		if(date>=20 && date<30)
+		{
+			cout<<"Gemini"<<endl;
+			cout<<"The Twins"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="june")
+		{
+				if(date>=1 && date<21)
+		{
+			cout<<"Gemini"<<endl;
+			cout<<"The Twins"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+//	cout<<"======================================================"<<endl;
+//	
+	
+//fourth zodiac
+	if(month=="june")
+	{
+		if(date>=21 && date<30)
+		{
+			cout<<"Cancer"<<endl;
+			cout<<"The Crab"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="july")
+		{
+				if(date>=1 && date<23)
+		{
+			cout<<"Cancer"<<endl;
+			cout<<"The Crab"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+//	cout<<"======================================================"<<endl;
+	
+//fifth zodiac   LEO
+if(month=="july")
+	{
+		if(date>=23 && date<30)
+		{
+			cout<<"Leo"<<endl;
+			cout<<"The Lion"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="august")
+		{
+				if(date>=1 && date<23)
+		{
+			cout<<"Lio"<<endl;
+			cout<<"The lion"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+//	cout<<"======================================================"<<endl;
+	
+	//sixth zodiac
+if(month=="august")
+	{
+		if(date>=23 && date<30)
+		{
+			cout<<"Virgo"<<endl;
+			cout<<"The Virgin"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="september")
+		{
+				if(date<=1 && date<23)
+		{
+			cout<<"Virgo"<<endl;
+			cout<<"The Virgin"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+//	cout<<"======================================================"<<endl;
+	
+		//seventh zodiac   Libra
+if(month=="september")
+	{
+		if(date>=23 && date<30)
+		{
+			cout<<"Libra"<<endl;
+			cout<<"The Scales"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="octuber")
+		{
+				if(date>=1 && date<23)
+		{
+			cout<<"Libra"<<endl;
+			cout<<"The Scales"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+//	cout<<"======================================================"<<endl;
+	
+	//eight zodiac   scorpio
+if(month=="octuber")
+	{
+		if(date>=23 && date<30)
+		{
+			cout<<"Scorpio"<<endl;
+			cout<<"The Scorpion"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="november")
+		{
+				if(date>=1 && date<22)
+		{
+			cout<<"Scorpio"<<endl;
+			cout<<"The Scorpion"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+//	cout<<"======================================================"<<endl;
+	
+	//nineth zodiac   sagittarius
+if(month=="november")
+	{
+		if(date>=22 && date<30)
+		{
+			cout<<"sagittarius"<<endl;
+			cout<<"The Archer"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="december")
+		{
+				if(date>=1 && date<22)
+		{
+			cout<<"sagittarius"<<endl;
+			cout<<"The Archer"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+//	cout<<"======================================================"<<endl;
+	
+	//tenth zodiac   capricon
+if(month=="december")
+	{
+		if(date>=22 && date<30)
+		{
+			cout<<"Capricon"<<endl;
+			cout<<"The Goat"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="jaunary")
+		{
+				if(date>=1 && date<20)
+		{
+			cout<<"Capricon"<<endl;
+			cout<<"The Goat"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+//	cout<<"======================================================"<<endl;
+	
+		//eleventh zodiac   Aquarius
+if(month=="jaunary")
+	{
+		if(date>=20 && date<30)
+		{
+			cout<<"Aquarius"<<endl;
+			cout<<"The Goat"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="february")
+		{
+				if(date>=1 && date<19)
+		{
+			cout<<"Aquarius"<<endl;
+			cout<<"The Goat"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+//	cout<<"======================================================"<<endl;
+	
+	//Twenlvw zodiac   picese
+if(month=="february")
+	{
+		if(date>=19 && date<30)
+		{
+			cout<<"picese"<<endl;
+			cout<<"The Fisher"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+	}
+	else
+	{
+		if(month=="march")
+		{
+				if(date>=1 && date<21)
+		{
+			cout<<"picese"<<endl;
+			cout<<"The Goat"<<endl;
+		}
+			else
+		{
+			cout<<"  "<<endl;
+		}
+		}
+	}
+	cout<<"======================================================"<<endl;
+	
+	
+} 
+}
+
+
