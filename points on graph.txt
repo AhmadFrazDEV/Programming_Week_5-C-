@@ -1,0 +1,56 @@
+
+#include<iostream>
+using namespace std;
+main()
+{		
+	int h;
+	cout<<"Enter the value of h(integer)....";
+	cin>>h;
+	int x=2*h;
+	int y=2*h;
+	int x_1, y_1;
+	cout<<"Enter X-axis.....";
+	cin>>x_1;
+	cout<<"Enter Y-axis.....";
+	cin>>y_1;
+	
+	// point on the boarder
+
+	if(x_1==y_1) 
+	{
+		if(x_1%h==0 && y_1%h==0)
+		{
+				cout<<"Point is.....ON THE BORDER..."<<endl;
+		}
+	}
+	if(y_1==0)
+	{
+			cout<<"Point is.....ON THE BORDER..."<<endl;
+	}
+		
+	
+	// point is out side
+	
+	else if(y<y_1)
+	{
+		cout<<"Point is...OUTSIDE..."<<endl;
+	}
+	
+	else if( x_1<=h && (x_1%h==1 || y_1%h==1))
+	{
+  	 	cout<<"Point is...OUTSIDE..."<<endl;
+	}
+	
+	// point is in side
+	
+	else if(y>y_1)
+	{
+		cout<<"Point is....INSIDE...."<<endl;
+	}
+
+    else if( y_1<=h && (x_1%h==1 || y_1%h==1))
+	{
+  	 	cout<<"Point is...INSIDE..."<<endl;
+	}	
+	
+} //main bracket
